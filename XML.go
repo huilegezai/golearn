@@ -45,4 +45,5 @@ func main() {
 
 	out, _ = xml.MarshalIndent(nesting, " ", "  ")
 	fmt.Println(string(out))
+
 }

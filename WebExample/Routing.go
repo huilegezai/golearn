@@ -10,6 +10,7 @@ import (
 func main() {
 	r := mux.NewRouter()
 
+	fmt.Println(1262.68 * 3)
 	r.HandleFunc("/books/{title}/page/{page}", func(w http.ResponseWriter, r *http.Request) {
 		vars := mux.Vars(r)
 		title := vars["title"]
